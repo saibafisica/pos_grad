@@ -17,15 +17,95 @@
     <div id="texto-aba"><p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna mollis vitae turpis eu amet vel, massa. Odio arcu ornare quam ultricies pulvinar. Adipiscing viverra placerat aliquam et laoreet. Praesent massa dignissim augue morbi eget dui. Ipsum sed tristique integer elementum purus. Netus fermentum praesent urna nisl. Turpis quisque mauris odio risus. Pretium arcu at magnis neque, sit pulvinar commodo volutpat fermentum. Malesuada molestie eu dictum egestas gravida sed nulla fusce. Neque faucibus.
     </p></div>
-    <div id="slider">
-      <div id="backpic">
-        <i class="material-icons">arrow_back_ios</i>
-      </div>
-      <div id="nextpic">
-        <i class="material-icons">arrow_forward_ios</i>
-      </div>
-      <img src="imgs/21314580.jpg">
-    </div>
+    
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 11</div>
+    <img src="/slideshow_imgs/_DSC0348.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 11</div>
+    <img src="/slideshow_imgs/_DSC0349.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 11</div>
+    <img src="/slideshow_imgs/_DSC0351.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 11</div>
+    <img src="/slideshow_imgs/_DSC0353.jpg" style="width:100%">
+    <div class="text">Caption Four</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 11</div>
+    <img src="/slideshow_imgs/_DSC0356.jpg" style="width:100%">
+    <div class="text">Caption Five</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 11</div>
+    <img src="/slideshow_imgs/_DSC0357.jpg" style="width:100%">
+    <div class="text">Caption Six</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 11</div>
+    <img src="/slideshow_imgs/_DSC0359.jpg" style="width:100%">
+    <div class="text">Caption Seven</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 11</div>
+    <img src="/slideshow_imgs/_DSC0360.jpg" style="width:100%">
+    <div class="text">Caption Eight</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 11</div>
+    <img src="/slideshow_imgs/_DSC0361.jpg" style="width:100%">
+    <div class="text">Caption Nine</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 11</div>
+    <img src="/slideshow_imgs/_DSC0363.jpg" style="width:100%">
+    <div class="text">Caption Ten</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 11</div>
+    <img src="/slideshow_imgs/_DSC0365.jpg" style="width:100%">
+    <div class="text">Caption Eleven</div>
+  </div>
+  
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+    <span class="dot" onclick="currentSlide(11)"></span>
+  </div>
   </div>
   </div>
   <div id="video-container">
@@ -49,8 +129,35 @@ Sílvia Helena Paixão Alencar
   </div>
   <script type="text/javascript">
     document.getElementById("backbuttom").onclick = function () {
-    location.href = "/pos_grad/index.html";
+    location.href = "/index.html";
     }
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
 </script>
 
 </body>
