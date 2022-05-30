@@ -34,6 +34,9 @@ border-radius: 0px 0px 320px 8px;
     border-radius: 4px;
     background-color: #C4C4C4;
 }
+
+/*cards das sub-areas*/
+
 .bottomcard{
   position: absolute;
   left: 0%;
@@ -43,12 +46,20 @@ border-radius: 0px 0px 320px 8px;
   background: #820505;
   box-shadow: 0px -16px 40px -8px rgba(0, 0, 0, 0.5), inset 4px 4px 8px rgba(255, 255, 255, 0.15);
   border-radius: 0px 0px 4px 4px;
-  padding: 40px 24px;
+  padding: 2% 2% 2% 4%;
   font-size: 24px;
   color:white;
-  vertical-text-align: center
 }
+
+.text-card{
+  height : 100px;
+  display : flex;
+  align-items : center;
+  justify-content : left;
+}
+
 .buttom{
+  cursor: pointer;
   height: 96px;
   width: 96px;
   border-radius: 50%;
