@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="row">
       <div class="cards" id="astrofisica">
         <div class="bottomcard">
-         <p>Astrofísica </p>
+         <div class="text-card">Astrofísica </div>
           <span onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="astrob">chevron_right</i>
           </span>
@@ -21,7 +21,7 @@
       </div>
       <div class="cards" id="cosmologia">
         <div class="bottomcard">
-         <p>Cosmologia</p>
+         <div class="text-card">Cosmologia</div>
           <span class="buttom"> 
             <i class="material-icons" id="cosmob">chevron_right</i>
           </span>
@@ -31,7 +31,7 @@
     <div class="row">
       <div class="cards" id="fis-aplic">
         <div class="bottomcard">
-         <p>Física Aplicada: Materiais avançados, instrumentação e dispositivos</p> 
+         <div class="text-card">Física Aplicada: Materiais avançados, instrumentação e dispositivos</div> 
           <span class="buttom" onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="fis-aplic">chevron_right</i>
           </span>
@@ -39,7 +39,7 @@
       </div>
       <div class="cards" id="fis-mat-cond">
         <div class="bottomcard">
-         <p>Física da materia condensada <br> e nanotecnologia</p>
+         <div class="text-card">Física da materia condensada <br> e nanotecnologia</div>
           <span class="buttom" onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="fis-mat-cond">chevron_right</i>
           </span>
@@ -49,7 +49,7 @@
     <div class="row">
       <div class="cards" id="fis-sis-bio">
         <div class="bottomcard">
-         <p>Física de sistemas biológicos <br>e Biotecnologia</p>
+         <div class="text-card">Física de sistemas biológicos <br>e Biotecnologia</div>
           <span class="buttom" onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="fis-sis-bio">chevron_right</i>
           </span>
@@ -57,7 +57,7 @@
       </div>
       <div class="cards" id="fisicoqui">
         <div class="bottomcard">
-         <p>Físico-química, Superfícies e <br>Síntese de Nanoestruturas</p>
+         <div class="text-card">Físico-química, Superfícies e <br>Síntese de Nanoestruturas</div>
           <span class="buttom" onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="fisicoqui">chevron_right</i>
           </span>
@@ -67,7 +67,7 @@
     <div class="row">
       <div class="cards" id="optica">
         <div class="bottomcard">
-         <p>Óptica, óptica quântica e Informação <br> Quântica</p>
+         <div class="text-card">Óptica, óptica quântica e Informação <br> Quântica</div>
           <span class="buttom"> 
             <i class="material-icons" id="optica">chevron_right</i>
           </span>
@@ -75,17 +75,22 @@
       </div>
       <div class="cards" id="fis-comp">
         <div class="bottomcard">
-         Sistemas complexos: física<br> computacional, física estatística e termodinâmica
-          <span class="buttom" onclick="goTo()" class="buttom"> 
-            <i class="material-icons" id="fis-comp">chevron_right</i>
-          </span>
+          <div class="text-card">
+             Sistemas complexos: física<br> computacional, física estatística e<br> termodinâmica
+          </div>
+          <div class="buttom-page">
+            <span class="buttom" onclick="goTo()" class="buttom"> 
+              <i class="material-icons" id="fis-comp">chevron_right</i>
+            </span>
+          </div>
+
         </div>
       </div>      
     </div>
     <div class="row">
       <div class="cards" id="fis-atom">
         <div class="bottomcard">
-         <p>Sistemas de muitos corpos, Estrutura eletrônica, física atômica e molecular</p>
+         <div class="text-card">Sistemas de muitos corpos, Estrutura<br> eletrônica, física atômica e molecular </div>  
           <span class="buttom" onclick="goTo()" class="buttom">  
             <i class="material-icons" id="fis-atom">chevron_right</i>
           </span>
@@ -93,7 +98,7 @@
       </div>
       <div class="cards" id="teoria-campos">
         <div class="bottomcard">
-         <p>Teoria geral de Partículas e campos</p>
+         <div class="text-card">Teoria geral de Partículas e campos</div>
           <span class="buttom" onclick="goTo()" class="buttom"> 
             <i class="material-icons" id="teoria-campos">chevron_right</i>
           </span>
