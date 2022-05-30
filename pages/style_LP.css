@@ -42,22 +42,23 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  height: 50%;
   width: 1142px;
   top: 1300px;
   border-radius: 0px;
-  background: #C4C4C4;
-  border-color: #820505;
+  background: #e8e8e8;
+  text-align: center;
 }
 
 #profs{
-  height: 1068px;
   width: 573px;
+  border-style: solid;
+  border-color: #820505;
 }
 
 #linhas{
-  height: 1068px;
   width: 573px;
+  border-style: solid;
+  border-color: #820505;
 }
 
 #texto-aba{
@@ -94,4 +95,8 @@ img {
 }
 i.material-icons{
   font-size: 56px;
+}
+
+a{
+  color: black
 }
