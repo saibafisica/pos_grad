@@ -1,0 +1,164 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style_main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+<div id="body">
+  <div  id="div-cabecalho">
+    <div id="titulo-cabec"><h1>Linhas de Pesquisa</h1></div>
+    <div class="row-cabec" >
+    <div id="img-cabec"><img src="./img/imagemprincipal.png"></div>
+   
+    <div id="text-cabec">      
+      <div> <p> Navegue e conheça mais sobre nossos grupos de estudos, orientadores e laboratórios!</p></div>
+    
+    </div>
+    </div>
+  </div>
+  
+  <div id="div-cards">
+    <div class="row">
+      <div class="cards" id="astrofisica">
+        <div class="bottomcard">
+         <div class="text-card">Astrofísica </div>
+          <span onclick="goTo()" class="buttom"> 
+            <i class="material-icons" id="astrob">chevron_right</i>
+          </span>
+        </div>
+      </div>
+      <div class="cards" id="cosmologia">
+        <div class="bottomcard">
+         <div class="text-card">Cosmologia</div>
+          <span onclick="goTo()"  class="buttom"> 
+            <i class="material-icons" id="cosmob">chevron_right</i>
+          </span>
+        </div>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="cards" id="fis-aplicada">
+        <div class="bottomcard">
+         <div class="text-card">Física Aplicada: Materiais avançados, instrumentação e dispositivos</div> 
+          <span class="buttom" onclick="goTo()"> 
+            <i class="material-icons" id="fis-aplic">chevron_right</i>
+          </span>
+        </div>
+      </div>
+      <div class="cards" id="fis-mat-condensada">
+        <div class="bottomcard">
+         <div class="text-card">Física da materia condensada <br> e nanotecnologia</div>
+          <span class="buttom" onclick="goTo()" class="buttom"> 
+            <i class="material-icons" id="fis-mat-cond">chevron_right</i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="cards" id="fis-sis-biolo">
+        <div class="bottomcard">
+         <div class="text-card">Física de sistemas biológicos <br>e Biotecnologia</div>
+          <span class="buttom" onclick="goTo()" class="buttom"> 
+            <i class="material-icons" id="fis-sis-bio">chevron_right</i>
+          </span>
+        </div>
+      </div>
+      <div class="cards" id="fisicoquimica">
+        <div class="bottomcard">
+         <div class="text-card">Físico-química, Superfícies e <br>Síntese de Nanoestruturas</div>
+          <span class="buttom" onclick="goTo()" class="buttom"> 
+            <i class="material-icons" id="fisicoqui">chevron_right</i>
+          </span>
+        </div>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="cards" id="optica-quanti">
+        <div class="bottomcard">
+         <div class="text-card">Óptica, óptica quântica e Informação <br> Quântica</div>
+          <span class="buttom"> 
+            <i class="material-icons" id="optica">chevron_right</i>
+          </span>
+        </div>
+      </div>
+      <div class="cards" id="fis-comput">
+        <div class="bottomcard">
+          <div class="text-card">
+             Sistemas complexos: física<br> computacional, física estatística e<br> termodinâmica
+          </div>
+          <div class="buttom-page">
+            <span class="buttom" onclick="goTo()" class="buttom"> 
+              <i class="material-icons" id="fis-comp">chevron_right</i>
+            </span>
+          </div>
+
+        </div>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="cards" id="fis-atomica">
+        <div class="bottomcard">
+         <div class="text-card">Sistemas de muitos corpos, Estrutura<br> eletrônica, física atômica e molecular </div>  
+          <span class="buttom" onclick="goTo()" class="buttom">  
+            <i class="material-icons" id="fis-atom">chevron_right</i>
+          </span>
+        </div>
+      </div>
+      <div class="cards" id="teoria-campo">
+        <div class="bottomcard">
+         <div class="text-card">Teoria geral de Partículas e campos</div>
+          <span class="buttom" onclick="goTo()" class="buttom"> 
+            <i class="material-icons" id="teoria-campos">chevron_right</i>
+          </span>
+        </div>
+      </div>      
+    </div>
+  </div> 
+</div>
+ 
+
+<script type="text/javascript">
+
+  document.getElementById("astrob").onclick = function () {
+    location.href = "pages/astrob.html";
+};
+  document.getElementById('cosmob').onclick = function(){
+    location.href = "pages/cosmob.html";
+  };
+  document.getElementById('fis-aplic').onclick = function(){
+    location.href = "pages/fis-aplic.html";
+  };
+
+  document.getElementById('fis-mat-cond').onclick = function(){
+    location.href = "pages/fis-mat-cond.html";
+  };
+
+  document.getElementById('fis-sis-bio').onclick = function(){
+    location.href = "pages/fis-sis-bio.html";
+  };
+
+  document.getElementById('fisicoqui').onclick = function(){
+    location.href = "pages/fisicoqui.html";
+  };
+
+  document.getElementById('optica').onclick = function(){
+    location.href = "pages/optica.html";
+  };
+
+  document.getElementById('fis-comp').onclick = function(){
+    location.href = "pages/fis-comp.html";
+  };
+
+  document.getElementById('fis-atom').onclick = function(){
+    location.href = "pages/fis-atom.html";
+  };
+
+  document.getElementById('teoria-campos').onclick = function(){
+    location.href = "pages/teoria-campos.html";
+  };
+
+
+</script>
+</body>
+</html>
